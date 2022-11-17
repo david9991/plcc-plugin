@@ -44,6 +44,7 @@ With additional settings
 ## Privacy & Terms
 - When you use this extension, you agree that we can temporarily save your project data on our server for syntax analysis, diagnosing, and compiling. And all temporary files are immediately deleted before you disconnect from the server.
 - The extension will download a helper from our server for local project folder access and as a gateway between your computer and the Language Server. It only accesses your opened project folders and doesn't collect any information otherwise.
+- the `opened project` mentioned above only affects our IEC61131-3 projects that contained a `project.json` file in the folder with map ` {"type": "PLCC-IEC61131-3"}`, the helper will never access your other kind of folder and files.
 
 ## TODO:
 - Onshape CAD integration (for simulation/digital twin).
