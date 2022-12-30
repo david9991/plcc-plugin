@@ -22,31 +22,31 @@
   - HCFA PLCs. (R8A, R8C... with specific firmware.)
   - Linux (amd64)
   - WebAssembly
-- A simple Unit Test Framework.
+- A simple Testing Framework.
 
 ## Recommended color themes for the semantic highlighting feature:
 - Dark+ (default dark)
 - Light+ (default light)
 
 With additional settings
-```
+```json
  "editor.semanticTokenColorCustomizations": {
     "enabled": true,
     "rules": {
-    "property": "#2ea154",
-    "operator": "#3b8abb",
-    "parameter": "#a89f23"
+      "property": "#2ea154",
+      "operator": "#3b8abb",
+      "parameter": "#a89f23"
     }
  }
 ```
 
 ## Privacy & Terms
 - When you use this extension, you agree that we can temporarily save your project data on our server for syntax analysis, diagnosing, and compiling. And all temporary files are immediately deleted after you disconnect from the server.
-- The extension will download a helper from our server for local project folder access and as a gateway between your computer and the Language Server. It only accesses your opened project folders and doesn't collect any information otherwise.
-- The `opened project` mentioned above only affects our IEC61131-3 projects that contained a `project.json` file in the folder with map ` {"type": "PLCC-IEC61131-3"}`, the helper will never access your other kind of folder and files.
+- The extension will download a helper from our server for local project folder access and as a gateway between your computer and the Language Server. It only accesses your opening project folders and doesn't collect any information otherwise.
+- The opening project mentioned above only affects our IEC61131-3 projects that contain a project.json file in the folder with map {"type": "PLCC-IEC61131-3"}, and the Helper will never access your other kind of folder and files.
 
 ## TODO:
-- Onshape CAD integration (for simulation/digital twin).
+- Onshape CAD integration (for simulating/digital twin).
 - WebAssembly runtime envirenment.
 - Remote Language Server
   - Goto Type Definition.
@@ -69,17 +69,4 @@ With additional settings
 
 ## Discussion:
 Telegram: https://t.me/plcc_support
-
-<!-- ## Screenshots
-Create a project.
-
-Live Diagnostic and Semantic Highlighting.
-
-References.
-
-Outline.
-
-Auto Completion.
-
-Formating. -->
 
