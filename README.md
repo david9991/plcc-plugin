@@ -24,6 +24,9 @@
   - HCFA PLCs (R8A, R8C, Q5... with specific firmware)
   - Linux (amd64)
   - WebAssembly
+- Edge Controller support:
+    - HCFA Q5 as Edge Controller (The firmware will be released soon)
+    - Raspberry Pi 4B as Edge Controller (The image will be released soon)
 - A simple Testing Framework.
 
 ## Recommended color themes for the semantic highlighting feature:
@@ -73,8 +76,8 @@ Please be advised that we do not guarantee that our services will always be avai
 - Open-source PLC device.
 - IEC 61850 support.
 - IEC 61499 support.
-- Raspberry Pi
 - PLCopenXML export/import/as a project.
+- Natural Language-driven configuration.
 
 ## Discussion:
 
