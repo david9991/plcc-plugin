@@ -53,7 +53,7 @@ Follow these steps:
 1. Install Ubuntu 22.04 LTS on your Raspberry Pi 4B. Ensure that WiFi is properly configured and able to connect to the internet.
 2. Connect to the device using SSH via WiFi.
 3. Obtain the MAC address of the wired network device using `ifconfig`.
-4. Run `curl -sL <https://raw.githubusercontent.com/david9991/plcc-edge/main/raspi/install.sh> | sudo sh -s <The Mac Address> <Username>`. Replace `<The Mac Address>` and `<Username>` with the MAC address of your Raspberry Pi's wired network device and a non-root username that you are currently using, respectively. For example: `curl -sL <https://raw.githubusercontent.com/david9991/plcc-edge/main/raspi/install.sh> | sudo sh -s e4:5f:01:05:95:3c david`.
+4. Run `curl -sL https://raw.githubusercontent.com/david9991/plcc-edge/main/raspi/install.sh | sudo sh -s <The Mac Address> <Username>`. Replace `<The Mac Address>` and `<Username>` with the MAC address of your Raspberry Pi's wired network device and a non-root username that you are currently using, respectively. For example: `curl -sL https://raw.githubusercontent.com/david9991/plcc-edge/main/raspi/install.sh | sudo sh -s e4:5f:01:05:95:3c david`.
 5. Finally, reboot your device.
 6. Change the `target` to `linux-arm64` in your `project.json` file in your project folder to run on Raspberry Pi.
 
