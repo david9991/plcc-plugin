@@ -46,6 +46,18 @@ With additional settings
 
 ```
 
+## How to turn your Raspberry Pi 4B into an Edge Controller
+
+Follow these steps:
+
+1. Install Ubuntu 22.04 LTS on your Raspberry Pi 4B. Ensure that WiFi is properly configured and able to connect to the internet.
+2. Connect to the device using SSH via WiFi.
+3. Obtain the MAC address of the wired network device using `ifconfig`.
+4. Run `curl -sL https://raw.githubusercontent.com/david9991/plcc-edge/main/raspi/install.sh | sudo sh -s <The Mac Address> <Username>`. Change `<The Mac Address>` and `<Username>` to the MAC address of your Raspberry Pi's wired network device and a non-root username that you are currently using, respectively. For example: `curl -sL https://raw.githubusercontent.com/david9991/plcc-edge/main/raspi/install.sh | sudo sh -s e4:5f:01:05:95:3c david`.
+5. Finally, reboot your device.
+
+Note: Currently, all devices are exposed to the whole cloud. We do not support private devices at the moment. You can change the device name by changing the `--name` parameter of `plcc-edge` services.
+
 ## Service Availability Notice
 Please be advised that we do not guarantee that our services will always be available. As a growing free service, we may experience downtime, technical issues, or other interruptions in service. We apologize for any inconvenience this may cause and we are continually working to improve our systems and minimize disruptions. Thank you for your understanding.
 
