@@ -26,7 +26,7 @@
   - WebAssembly
 - Edge Controller support:
     - HCFA Q5 as Edge Controller (The firmware will be released soon)
-    - Raspberry Pi 4B as Edge Controller (The image will be released soon)
+    - Raspberry Pi 4B as Edge Controller (Only EtherCAT is supported at the moment)
 - A simple Testing Framework.
 
 ## Recommended color themes for the semantic highlighting feature:
@@ -50,7 +50,7 @@ With additional settings
 
 Follow these steps:
 
-1. Install Ubuntu 22.04 LTS on your Raspberry Pi 4B. Ensure that WiFi is properly configured and able to connect to the internet.
+1. Install Ubuntu 22.04 LTS (64-bit) on your Raspberry Pi 4B. Ensure that WiFi is properly configured and able to connect to the internet.
 2. Connect to the device using SSH via WiFi.
 3. Obtain the MAC address of the wired network device using `ifconfig`.
 4. Run `curl -sL https://raw.githubusercontent.com/david9991/plcc-edge/main/raspi/install.sh | sudo sh -s <The Mac Address> <Username>`. Replace `<The Mac Address>` and `<Username>` with the MAC address of your Raspberry Pi's wired network device and a non-root username that you are currently using, respectively. For example: `curl -sL https://raw.githubusercontent.com/david9991/plcc-edge/main/raspi/install.sh | sudo sh -s e4:5f:01:05:95:3c david`.
@@ -66,7 +66,7 @@ Please be advised that we do not guarantee that our services will always be avai
 ## Privacy & Terms
 
 - By using this extension, you agree that we can temporarily save your project data on our server for syntax analysis, diagnosis, and compiling. All temporary files are immediately deleted after you disconnect from the server.
-- The extension will download a helper from our server for local project folder access and as a gateway between your computer and the Language Server. It only accesses your opening project folders and doesn't collect any information otherwise.
+- The extension will download a helper from our server for local project folder access and as a gateway between your computer and the Language Server. It only accesses your opening project folders and doesn't collect any information otherwise. And this helper will be elimnated in future versions.
 - The opening project mentioned above only affects our IEC61131-3 projects that contain a project.json file in the folder with the map {"type": "PLCC-IEC61131-3"}. The Helper will never access your other kinds of folders and files.
 
 ## TODO:
@@ -92,6 +92,8 @@ Please be advised that we do not guarantee that our services will always be avai
 - IEC 61499 support.
 - PLCopenXML export/import/as a project.
 - Natural Language-driven configuration.
+- Interface for Node-Red.
+- IO support for Raspberry Pi.
 
 ## Discussion:
 
