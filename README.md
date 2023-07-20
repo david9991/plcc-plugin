@@ -21,13 +21,13 @@
 - EtherCAT/IO/Modbus mapping editor.
 - Simple real-time data visualization.
 - Supported targets:
-  - HCFA PLCs (R8A, R8C, Q5... with specific firmware)
-  - Linux (amd64)
-  - WebAssembly
+  - Linux (amd64: 'linux', aarch64: 'linux-arm64')
+  - WebAssembly (wasm32: 'wasm')
 - Edge Controller support:
-    - HCFA Q5 as Edge Controller (The firmware will be released soon)
     - Raspberry Pi 4B as Edge Controller (Only EtherCAT is supported at the moment)
 - A simple Testing Framework.
+- Accessing directly represented variables from third-party applications.
+- You can run control applications directly with Wasmtime, without the need for an Edge controller.
 
 ## Recommended color themes for the semantic highlighting feature:
 - Dark+ (default dark)
@@ -70,9 +70,8 @@ Please be advised that we do not guarantee that our services will always be avai
 - The opening project mentioned above only affects our IEC61131-3 projects that contain a project.json file in the folder with the map {"type": "PLCC-IEC61131-3"}. The Helper will never access your other kinds of folders and files.
 
 ## TODO:
-
+- Web Extension (for https://vscode.dev)
 - Onshape CAD integration (for simulating/digital twin).
-- WebAssembly runtime environment (Enhanced WASI).
 - Remote Language Server
     - Goto Type Definition.
     - Goto Implementation.
@@ -80,8 +79,7 @@ Please be advised that we do not guarantee that our services will always be avai
     - Find References.
     - Outline.
 - PLC Module Marketplace.
-- Web3-based experimental features.
-    - PLC Module Marketplace with NFT support.
+- Blockchain-Based Data Management.
 - FBD/SFC programming languages.
 - IEC 61131-3 project view.
 - Debug adapter.
@@ -92,7 +90,6 @@ Please be advised that we do not guarantee that our services will always be avai
 - IEC 61499 support.
 - PLCopenXML export/import/as a project.
 - Natural Language-driven configuration.
-- Interface for Node-Red.
 - IO support for Raspberry Pi.
 
 ## Discussion:
