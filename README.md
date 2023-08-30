@@ -2,7 +2,8 @@
 
 ## Features:
 - Multi-platform support
-  - Windows, macOS, Linux
+  - VScode Desktop on Windows, macOS, Linux.
+  - Code-Server, Github Codespaces.
 - Cloud-based Compile Farm.
 - Built-in Standard and Motion (PLCopen) libraries.
 - Support for ST/IL/LD programming languages.
@@ -94,4 +95,5 @@ Please be advised that we do not guarantee that our services will always be avai
 
 ## Discussion:
 
-Telegram: [https://t.me/plcc_support](https://t.me/plcc_support)
+- Fediverse: https://wud.me/@plccproject
+- Telegram: [https://t.me/plcc_support](https://t.me/plcc_support) (Deprecating)
