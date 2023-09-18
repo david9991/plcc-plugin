@@ -93,6 +93,9 @@ Please be advised that we do not guarantee that our services will always be avai
 - Natural Language-driven configuration.
 - IO support for Raspberry Pi.
 
+## Service Status:
+[https://plccstats.pocograph.com](https://plccstats.pocograph.com)
+
 ## Discussion:
 
 - Fediverse: https://wud.me/@plccproject
