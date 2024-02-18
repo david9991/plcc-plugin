@@ -29,6 +29,10 @@
 - A simple Testing Framework.
 - Accessing directly represented variables from third-party applications.
 - You can run control applications directly with Wasmtime, without the need for an Edge controller.
+- A simple simulator (Only works with WebAssembly targets)
+- A simple EtherCAT configurator (experimental)
+- Decentrialize Physical Infrastructure Network
+    - On-chain edge device management (experimental).
 
 ## Recommended color themes for the semantic highlighting feature:
 - Dark+ (default dark)
@@ -70,7 +74,30 @@ Please be advised that we do not guarantee that our services will always be avai
 - The extension will download a helper from our server for local project folder access and as a gateway between your computer and the Language Server. It only accesses your opening project folders and doesn't collect any information otherwise. And this helper will be elimnated in future versions.
 - The opening project mentioned above only affects our IEC61131-3 projects that contain a project.json file in the folder with the map {"type": "PLCC-IEC61131-3"}. The Helper will never access your other kinds of folders and files.
 
+## A full example of project.json
+```json
+{
+  "type": "PLCC-IEC61131-3",
+  "configuration": "Config1",
+  "target": "r8",
+  "libs": [
+    "plcc_motion"
+  ],
+  "mode": "app"
+}
+```
+- `"type": "PLCC-IEC61131-3"` (**Mandatory**): Indicates that this directory is an IEC 61131 project.
+- `"configuration": "Config1"` (**Mandatory**): Specifies configurations to use
+(comma-separated).
+- `"target": "r8"` (**Mandatory**): Specifies the compilation target (r8, wasm, linux, or linux-arm64).
+- `"libs": [...]` (**Optional**): Lists built-in libraries to use (plcc_motion or oscat).
+- `"mode": "app"` (**Mandatory**): Compile mode (app or lib).
+
 ## TODO:
+- Decentrialize Physical Infrastructure Network
+    - Compile service decentralization (Off-chain worker).
+    - Control program protection.
+    - Control program verification.
 - Web Extension (for https://vscode.dev)
 - Onshape CAD integration (for simulating/digital twin).
 - Remote Language Server
@@ -84,7 +111,7 @@ Please be advised that we do not guarantee that our services will always be avai
 - FBD/SFC programming languages.
 - IEC 61131-3 project view.
 - Debug adapter.
-- EtherCAT/IO/Modbus configurator.
+- IO/Modbus configurator.
 - PLC Module Packaging & Publishing Tools.
 - Open-source PLC device.
 - IEC 61850 support.
@@ -93,10 +120,6 @@ Please be advised that we do not guarantee that our services will always be avai
 - Natural Language-driven configuration.
 - IO support for Raspberry Pi.
 
-## Service Status:
-[https://plccstats.pocograph.com](https://plccstats.pocograph.com)
-
 ## Discussion:
 
-- Fediverse: https://wud.me/@plccproject
-- Telegram: [https://t.me/plcc_support](https://t.me/plcc_support) (Deprecating)
+- Mastodon: https://wud.me/@plccproject
