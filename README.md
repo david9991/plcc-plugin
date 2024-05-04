@@ -1,4 +1,5 @@
 # PLCC IEC 61131-3 Development Environment
+![Service Status](https://uptime.pocograph.com/api/badge/7/status)
 
 ## Features:
 - Multi-platform support
@@ -25,14 +26,16 @@
   - Linux (amd64: 'linux', aarch64: 'linux-arm64')
   - WebAssembly (wasm32: 'wasm')
 - Edge Controller support:
-    - Raspberry Pi 4B as Edge Controller (Only EtherCAT is supported at the moment)
+  - Raspberry Pi 4B as Edge Controller (Only EtherCAT is supported at the moment)
 - A simple Testing Framework.
 - Accessing directly represented variables from third-party applications.
 - You can run control applications directly with Wasmtime, without the need for an Edge controller.
 - A simple simulator (Only works with WebAssembly targets)
 - A simple EtherCAT configurator (experimental)
-- Decentrialize Physical Infrastructure Network
-    - On-chain edge device management (experimental).
+- Decentrialized Physical Infrastructure Network (experimental)
+  - Web3 Wallet.
+  - IPFS support (Pinata only).
+  - On-chain edge device management.
 
 ## Recommended color themes for the semantic highlighting feature:
 - Dark+ (default dark)
@@ -95,17 +98,18 @@ Please be advised that we do not guarantee that our services will always be avai
 
 ## TODO:
 - Decentrialize Physical Infrastructure Network
-    - Compile service decentralization (Off-chain worker).
-    - Control program protection.
-    - Control program verification.
+  - Light client without centrialized RPC server (fully p2p network).
+  - Compile service decentralization (Off-chain worker).
+  - Control program protection.
+  - Control program verification.
 - Web Extension (for https://vscode.dev)
 - Onshape CAD integration (for simulating/digital twin).
 - Remote Language Server
-    - Goto Type Definition.
-    - Goto Implementation.
-    - Formatting.
-    - Find References.
-    - Outline.
+  - Goto Type Definition.
+  - Goto Implementation.
+  - Formatting.
+  - Find References.
+  - Outline.
 - PLC Module Marketplace.
 - Blockchain-Based Data Management.
 - FBD/SFC programming languages.
