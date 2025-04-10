@@ -1,5 +1,4 @@
 # PLCC IEC 61131-3 Development Environment
-![Service Status](https://uptime.pocograph.com/api/badge/7/status)
 
 ## Features:
 - Multi-platform support
@@ -127,3 +126,6 @@ Please be advised that we do not guarantee that our services will always be avai
 ## Discussion:
 
 - Mastodon: https://wud.me/@plccproject
+
+## The extension:
+- https://marketplace.visualstudio.com/items?itemName=david9991.plcc-plugin
